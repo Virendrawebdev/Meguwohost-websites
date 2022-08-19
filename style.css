@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+.container{
+    width: 100%;
+    background-color: rgb(14, 33, 95);
+}
+
+.message{
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.live,.num{
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+}
+.live{
+    background-color: rgb(240, 240, 34);
+    margin-right: 7px;
+    color: rgb(246, 249, 252);
+    border:1px solid #fff;
+    font-weight: 500;
+}
+.num{
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-size: 17px;
+}
+nav{
+    width: 90%;
+    padding: 20px 10px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.lists{
+    display: flex;
+    text-transform: uppercase;
+    column-gap: 7px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li{
+    padding: 7px 10px;
+    cursor: pointer;
+}
+.img{
+margin-left: 15px;
+}
+
+.bg{
+    width: 100%;
+    background-image:url('./image/homebg.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) url('./image/homebg.jpg');
+
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    min-width: 80%;
+    /* opacity: 0.04; */
+}
+
+.info p{
+font-size: 50px;
+color:white;
+font-weight: 500;
+margin-bottom: 20px;
+letter-spacing: 2px;
+text-transform: capitalize;
+text-align: center;
+
+}
+.info p + p{
+    font-size: 20px;
+}
+.modern{
+    text-align: center;
+
+}
+.input-wraper{
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+
+}
+input{
+    padding: 15px 15px;
+    width:35%;
+}
+.input-wraper button{
+    background-color: yellow;
+    border: none;
+    padding: 15px 20px;
+    font-size: 17px;
+}
+.check{
+    border-left: 1px solid rgb(32, 30, 30);
+    margin-right: 2px;
+    color: #fff;
+}
+.img2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+/* sevice page */
+.service{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(97, 38, 38);
+    display: flex;
+}
+.left{
+    width: 50%;
+    background-color:rgb(42, 42, 77);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left h1{
+    width:100%;
+    text-align: center;
+    font-size: 26px;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+.left p{
+    width: 50%;
+
+}
+.btnserr{
+    width: 12%;
+    padding: 10px;
+    background-color:rgb(42, 42, 77);
+    border: 1px solid white;
+    color: #fff;
+    margin-top: 3em;
+    
+}
+.right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 236, 83);
+    color: #fff;
+    padding-top: 20px;
+}
+.right h1{
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+}
+.right h2{
+    text-align: center;
+    font-size: 26px;
+    padding: 30px;
+    letter-spacing: 1px;
+
+}
+.right p{
+    width: 50%;
+
+}
+.btnserl{
+    width: 12%;
+    padding: 10px;
+    background-color: rgb(247, 236, 83);
+    border: 1px solid white;
+    color: #fff;
+    margin-top: 3em;
+    
+}
+/* features */
+.features{
+    width: 100%;
+    background-image:url('./image/featurebg.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}.features h1{
+    width: 100%;
+    font-size: 2.5em;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform:capitalize;
+    padding-top: 1em;
+}
+.features h2{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight:bold;
+    color: rgb(117, 115, 115);
+    text-align: center;
+    text-transform:capitalize;
+    padding-top: 0.5em;
+}
+.featureflex{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+.feature{
+    width: 20%;
+    height: 60vh;
+    text-align: center;
+   
+    
+
+}
+.feature hr{
+    width: 20%;
+    margin-top: 20px;
+
+
+}
+.feature img{
+    margin-top: 30%;
+}
+.feature h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform:capitalize;
+    padding: 1em;
+    letter-spacing: 1px;
+    color: rgb(247, 247, 22);
+}
+.feature p{
+    line-height: 1.5;
+    color: rgb(141, 143, 145);
+}
+/* our clients */
+.clients{
+    width: 100%;
+    height: 80vh;
+}
+.ourclient{
+    display: flex;
+    height: 40vh;
+}
+.clientinfo{
+    width: 40%;
+    text-align:start;
+    text-align: start;
+    margin-left: 3em;
+    text-transform:capitalize;
+}
+.clientinfo h1{
+    font-size: 2.5em;
+    margin-top: 2.5em;
+    font-weight: 800;
+    color: rgb(97, 85, 85);
+    
+}
+.clientinfo p{
+    width: 60%;
+    margin-top: 1em;
+    color: rgb(141, 143, 145);
+}
+.company{
+    width: 60%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.clientQ{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.client{
+ width: 25%;
+ background-color:rgb(245, 248, 250);
+
+}
+.client p{
+    padding: 1em;
+    text-transform:capitalize;
+    color: rgb(141, 143, 145);
+
+}
+.client span{
+    padding: 1em;
+    font-size: 1.5em;
+}
+.client img{
+    margin-left:75%;
+}
+/* plan and pricing */
+.pp{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(42, 42, 77);
+    display: flex;
+    text-align: center;
+}
+.pp1{
+    width: 60%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pp1 h1{
+    font-size: 3em;
+    color: #fff;
+}
+    
+.pp1 p{
+    font-size: 1.5em;
+    color: rgb(141, 143, 145);
+    padding-top: 1em;
+    
+}
+.pp2{
+    width: 40%;
+
+}
+.btnpp{
+    width: 22%;
+    font-size:14px;
+    padding: 16px;
+    background-color: rgb(247, 236, 83);
+    border: 1px solid white;
+    color: #fff;
+    margin-top: 8em;
+}
+/* footer */
+footer{
+    background-color:rgb(59, 59, 88) ;
+    height: 70vh;
+}
+.footers{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+}
+.map{
+    width: 60%;
+    padding-top: 5%;
+}
+.navs{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(214, 199, 199);
+}
+.navs h1{
+    font-size: 1.5em;
+    padding: 5%;
+}
+nav hr{
+    width: 55%;
+}
+.icon{
+    color: yellow;
+    padding: 22%;
+    width:100%;
+}
+.icon i{
+    padding: 6%;
+}
+.last{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.last span{
+    color: yellow;
+}
+#red{
+    color: red;
+}
+
